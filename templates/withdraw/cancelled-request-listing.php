@@ -24,14 +24,9 @@
             <td><?php echo wc_price( $row->amount ); ?></td>
             <td><?php echo esc_html( dokan_withdraw_get_method_title( $row->method ) ); ?></td>
             <td><?php echo esc_html( date_i18n( 'M j, Y g:ia', strtotime( $row->date ) ) ); ?></td>
-            <td><?php echo wp_keses_post( $row->note ); ?></td>
+            <td><?php echo wp_kses_post( $row->note ); ?></td>
         </tr>
     <?php } ?>
 
     </tbody>
 </table>
-
-<!-- esc_html_e -->
-<!-- esc_attr_e -->
-<!-- wp_keses_post -->
-<!-- esc_html -->
